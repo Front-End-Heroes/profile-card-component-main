@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --fs-names-stats: 18px;
+  --fw-normal: 400;
+  --img-top: 10.3125rem;
+}
+
+main {
+  width: --desktop-width;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+span,
+p {
+  color: var(--dark-gray);
+}
+.top {
+  background: var(--dark-gray);
+  height: 35%;
+  width: 100%;
+}
+.bottom {
+  background: white;
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.info p {
+  margin-top: 1rem;
+}
+
+.engagements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22%;
+}
+
+hr {
+  font-weight: 400;
+}
+.FL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.FL h1 {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+}
+h1,
+h2,
+p,
+.github {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.person {
+  position: absolute;
+  z-index: 1;
+  top: 129px;
+}
+.person img {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 7rem;
+  height: 7rem;
+}
+.attribution {
+    margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.github {
+  font-style: italic;
+  font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+  .card {
+    width: 80vw;
+    height: 500px;
+  }
+
+  .person {
+    top: 125px;
+  }
+  .person img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .top {
+    height: 35%;
+  }
+  .bottom {
+    height: 65%;
+  }
+  .FL h1 {
+    font-size: 1.5rem;
+  }
+}
